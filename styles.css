@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container-wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1100px;
+}
+p {
+  color: #21232e;
+  font-weight: 300;
+}
+
+/*--------------Header-----------------*/
+#Header.container-wrapper {
+  background-color: #21232e;
+}
+#Header .container {
+  margin-top: 0px;
+}
+#Header .row {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  align-content: center;
+  height: 60px;
+}
+#Header .logo {
+  width: 100px;
+}
+#Header .nav-container {
+  display: flex;
+  justify-self: end;
+}
+#Header .row .nav-container .links-wrapper {
+  list-style-type: none;
+}
+#Header .row .nav-container .links-wrapper .links {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 100% 10px;
+}
+#Header .row .nav-container .links-wrapper .links:hover {
+  background-color: white;
+  color: #04a87f;
+}
+/*--------------Header Responsive----*/
+@media screen and (max-width: 830px) {
+  #Header {
+    position: fixed;
+    top: 0;
+  }
+}
+
+/*--------------Home-----------------*/
+#Home.container {
+  margin-top: 100px;
+}
+#Home {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 100px;
+}
+#Home .row1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+#Home .row1 .column1 {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  align-content: center;
+  gap: 20px;
+}
+#Home .row1 .column1 .home-title h1 {
+  font-size: 3rem;
+  color: #04a87f;
+
+  font-weight: bold;
+}
+#Home .row1 .column1 .home-discription p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+#Home .row1 .column1 .home-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#Home .row1 .column1 .home-form .contactName {
+  width: 110px;
+  height: 40px;
+  padding: 10px;
+}
+#Home .row1 .column1 .home-form .contactPhone {
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+}
+#Home .row1 .column1 .home-form .contactEmail {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+}
+#Home .row1 .column1 .home-form .btn {
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #04a87f;
+  color: white;
+  font-size: 1.2rem;
+}
+#Home .row1 .column2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Home .row1 .column2 .home-img {
+  max-width: 350px;
+}
+#Home .row2 {
+  justify-items: center;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+#Home .row2 .arrow-icon {
+  width: 100px;
+}
+#Home .row2 h1 {
+  font-size: 3rem;
+  color: #21232e;
+  font-weight: bold;
+}
+/*-----Home Responsive-----*/
+@media screen and (max-width: 830px) {
+  #Home,
+  #Home .row1,
+  #Home .row1 .column1 {
+    display: flex;
+    flex-direction: column;
+  }
+  #Home .row1 .column1 .home-form {
+    gap: 2px;
+  }
+  #Home .row1 .column1 .home-form .contactName {
+    width: 100%;
+  }
+  #Home .row1 .column1 .home-form .contactPhone {
+    width: 100%;
+  }
+  #Home .row1 .column1 .home-form .contactEmail {
+    width: 100%;
+  }
+  #Home .row1 .column1 .home-form .contact #Home .row1 .column2 {
+    display: block;
+  }
+  #Home .row1 .column2 .home-img {
+    width: 300px;
+  }
+  #Home .row2 .arrow-icon {
+    width: 50px;
+  }
+}
+/*---------------Tools---------------------*/
+
+#Tools .row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+}
+#Tools .row .card {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  border-radius: 20px;
+  justify-items: center;
+  align-content: center;
+  height: 200px;
+  background-color: #c5c5c5;
+}
+#Tools .row .card .card-img {
+  width: 100px;
+}
+#Tools .row .card h2 {
+  font-size: 1.4rem;
+
+  color: #21232e;
+  font-weight: bold;
+}
+#Tools .row .card p {
+  line-height: 1.5rem;
+  text-align: center;
+}
+@media screen and (max-width: 830px) {
+  #Tools .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*----------About---------*/
+#About {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  gap: 20px;
+}
+#About h1 {
+  color: #21232e;
+  font-size: 3rem;
+  font-weight: bold;
+}
+#About p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+/*---------Our values------*/
+#OurValues .row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+}
+#OurValues .row .card {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  border-radius: 20px;
+  justify-items: center;
+  align-content: center;
+  height: 200px;
+  background-color: #c5c5c5;
+}
+#OurValues .row .card .card-img {
+  width: 100px;
+}
+#OurValues .row .card h2 {
+  font-size: 1.4rem;
+
+  color: #21232e;
+  font-weight: bold;
+}
+#OurValues .row .card p {
+  line-height: 1.5rem;
+  text-align: center;
+}
+/*----Our Values Responsive----*/
+@media screen and (max-width: 830px) {
+  #OurValues .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*----Contact Us---*/
+
+#Contact .row {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  align-items: center;
+}
+#Contact .row .column1 {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 30px;
+}
+#Contact .row .column1 h1 {
+  font-size: 3rem;
+  color: #04a87f;
+}
+#Contact .row .column1 p {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+#Contact .row .column1 ul li {
+  list-style: none;
+  line-height: 2rem;
+}
+#Contact .row .column1 ul li p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+#Contact .row .column2 .contactName {
+  width: 35%;
+  height: 60px;
+  padding: 20px;
+}
+#Contact .row .column2 .contactEmail {
+  width: 60%;
+  height: 60px;
+  padding: 20px;
+
+  margin: 15px 0px 25px 4%;
+}
+#Contact .row .column2 .contactMessage {
+  width: 100%;
+  height: 150px;
+  padding: 20px;
+  resize: none;
+  margin-bottom: 20px;
+}
+#Contact .row .column2 .btn {
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #04a87f;
+  color: white;
+  font-size: 1.2rem;
+}
+/*-----Contact Us responsive-----*/
+@media screen and (max-width: 830px) {
+  #Contact .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #Contact .row .column1 iframe {
+    margin-left: 20px;
+    width: 300px;
+  }
+  #Contact .row .column2 .contactName {
+    width: 40%;
+    margin-bottom: 10px;
+  }
+  #Contact .row .column2 .contactEmail {
+    width: 58%;
+    margin: 0 0 10px 0;
+  }
+  #Contact .row .column2 .contactMessage {
+    width: 99%;
+  }
+  #Contact .row .column2 .btn {
+    margin-left: 80px;
+  }
+}
+/*----foooter-----*/
+#Footer.container-wrapper {
+  background-color: #21232e;
+}
+#Footer .row {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Footer p {
+  color: white;
+}
