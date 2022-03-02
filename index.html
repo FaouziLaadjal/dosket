@@ -15,14 +15,18 @@
       <div class="container">
         <nav class="row">
           <img class="logo" src="imgs/dosketW.png" alt="" />
-          <ul class="nav-container">
-            <li class="links-wrapper"><a class="links" href="">Home</a></li>
-            <li class="links-wrapper">
-              <a class="links" href="">Our Tools</a>
-            </li>
-            <li class="links-wrapper"><a class="links" href="">About Us</a></li>
-            <li class="links-wrapper"><a class="links" href="">Contact</a></li>
-          </ul>
+          <button class="nav-btn" id="navbtn"></button>
+          <div class="nav-container show" id="navlinks" >
+            <ul>
+              <li class="links-wrapper"><a class="links" href="#Home">Home</a></li>
+              <li class="links-wrapper">
+                <a class="links" href="#Tools">Our Tools</a>
+              </li>
+              <li class="links-wrapper"><a class="links" href="#About">About Us</a></li>
+              <li class="links-wrapper"><a class="links" href="#Contact">Contact</a></li>
+            </ul> </div>
+          
+          
         </nav>
       </div>
     </header>
@@ -189,7 +193,9 @@
                 name="contactMessage"
                 id="contactMessage"
               ></textarea>
-              <button class="btn">Contact Us</button>
+              <div>
+                <button class="btn">Contact Us</button>
+              </div>
             </form>
           </div>
         </div>
@@ -206,5 +212,8 @@
         
       </div>
     </footer>
+    <!-----End of footer----->
+    <!-----Js file----------->
+    <script src="index.js"></script>
   </body>
 </html>
